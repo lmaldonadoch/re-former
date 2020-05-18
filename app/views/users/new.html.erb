@@ -24,7 +24,7 @@
 <% end %>
 -->
 
-<%= form_for @user do |f|%>
+<%= form_for @user, url: user_path, html: { method: :post } do |f|%>
   <%= f.label :username, 'Your Uername here' %> <br>
   <%= f.text_field :username %> <br> <br>
   <%= f.label :email %> <br> 
