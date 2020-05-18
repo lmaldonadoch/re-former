@@ -1,4 +1,25 @@
-<%= form_for @user do |f| %>
+<!--<form accept-charset="UTF-8" action="/users" method="post">
+  <label for="username">Username:</label>
+  <input id="username"  name="username" type="text"><br>
+  <label for="email">e-mail:</label>
+  <input id="email" name="email" type="text"><br>
+  <label for="password">Password:</label>
+  <input id="password" name="password" type="password"><br>
+  <input type="submit" value="Submit">
+</form>-->
+
+<!--
+<%= form_tag( users_path, method: "post") do %>
+  <%= label_tag( :username, "Username:") %>
+  <%= text_field(:user, :username ) %>
+  <%= label_tag(:email, "E-mail:") %>
+  <%= email_field(:user, :email ) %>
+  <%= label_tag(:password, "Password:") %>
+  <%= password_field_tag(:password) %>  
+  <%= submit_tag("Create") %>
+<% end %>
+-->
+<%= form_for @user, url: users_path(@user), html: { method: :put } do |f|%>
   <%= f.label :username, 'Uername you want to edit' %> <br>
   <%= f.text_field :username %> <br> <br>
   <%= f.label :email,'Email you want to edit' %> <br> 
