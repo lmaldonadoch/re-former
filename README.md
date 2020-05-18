@@ -8,6 +8,8 @@ In this project, we learned about forms, from the very basic to the Railsy-er on
 
 ![screenshot1](app/assets/images/screenshot04.png)
 
+![screenshot1](app/assets/images/screenshot05.png)
+
 # Requirements
 
 - Ruby > 2.6.5
