@@ -10,7 +10,7 @@
 
   <input type="submit" value="Submit">
 </form> 
--->
+
 
 <%= form_tag users_path do %>
 <h2>Username<h2>
@@ -22,3 +22,16 @@
    <br>
   <%= submit_tag %>
 <% end %>
+-->
+
+<%= form_for @user do |f|%>
+  <%= f.label :username, 'Your Uername here' %> <br>
+  <%= f.text_field :username %> <br> <br>
+  <%= f.label :email %> <br> 
+  <%= f.email_field :email%> <br><br>
+  <%= f.label :password %> <br>
+  <%= f.password_field :password, placeholder: '1 Upper case at least'  %> <br>
+  <br>
+  <br>
+  <%= f.submit %>
+<%end%>
