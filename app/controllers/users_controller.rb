@@ -3,7 +3,6 @@ class UsersController < ApplicationController
   def new
     @user = User.new
 	@user.email ||= 'example@example.com'
-	@user.username ||= 'Example-Username'
   end
 
   def create
