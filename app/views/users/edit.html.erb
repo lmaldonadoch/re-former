@@ -19,7 +19,7 @@
   <%= submit_tag("Create") %>
 <% end %>
 -->
-<%= form_for @user, url: users_path(@user), html: { method: :put } do |f|%>
+<%= form_for @user do |f|%>
   <%= f.label :username, 'Uername you want to edit' %> <br>
   <%= f.text_field :username %> <br> <br>
   <%= f.label :email,'Email you want to edit' %> <br> 
