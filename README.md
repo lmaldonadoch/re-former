@@ -73,4 +73,4 @@ Feel free to check the [issues page](https://github.com/shubham14p3/micro_reddit
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a ⭐️ if you like this project!!
